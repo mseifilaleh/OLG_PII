@@ -59,12 +59,12 @@ The paper is organized as follows: Operational principle of all-optical TDM usin
 
 \section{ Operational principle of all-optical TDM using flower-like structure}
 \label{} 
-Fig.\ref{fig1} shows a four-petal flower-like structure in GaAs-AlGaAs material system. The central MRR (3$^{rd}$ MRR) has never been pumped by any OPP. The MRR$_1$, MRR$_2$, MRR$_4$ and MRR$_5$ are pumps by \textit{OPP A}, \textit{OPP B}, \textit{OPP $B'$} and \textit{OPP $A'$}.
+Fig.\ref{fig1_flower} shows a four-petal flower-like structure in GaAs-AlGaAs material system. The central MRR (3$^{rd}$ MRR) has never been pumped by any OPP. The MRR$_1$, MRR$_2$, MRR$_4$ and MRR$_5$ are pumps by \textit{OPP A}, \textit{OPP B}, \textit{OPP $B'$} and \textit{OPP $A'$}.
 \begin{figure}[tb]
 \centering
-	\includegraphics[width=4 in]{flower.pdf}
+	\includegraphics[width=4 in]{fig1_flower.pdf}
 	\caption{Schematic of an flower-like structure.}
-	\label{fig1}
+	\label{fig1_flower}
 \end{figure}
  The effect of cross-coupling and average peak power have been considered to calculate transfer functions and to obtain required average peak power to make refractive index of MRRs changed. In the proposed structure when light is applied to an input port, it might be extracted at each drop port of the other waveguides or removed from its throughput port. Defining all parameters and calculating transfer function from the specified input port (1$^{st}$ input port) to the 1$^{st}$, the 3$^{rd}$ and the 4$^{th}$ drop port are explained in Appendix. Calculation the other transfer functions are same as what has been presented in Appendix. Also, Flower-like structure is extendable. It could be extended by adding more petals or by serially/parallel coupled some flower-like structure \cite{razaghi2016design}. Now, we represent cases in which optical signal has been injected in the only one input port and it would be extracted from optimum drop port. In fact, there are some optical paths that experience less optical losses \cite{razaghi2016design}. They have less effective optical path from an input port to the desired drop port. The optimum routs in flower-like structure have been explained in ref \cite{razaghi2016design}. These cases are introduced based on states of \textit{OPP (A)} and \textit{OPP (B)} in Tab. \ref{tab1}.
   \begin{table}[H]
@@ -113,12 +113,12 @@ Fig.\ref{fig1} shows a four-petal flower-like structure in GaAs-AlGaAs material 
 }
 \label{tab1} % is used to refer this table in the text
 \end{table}
-A flower-like based 4:1 TDM is depicted in Fig.\ref{fig2}. Here, four different input signals have been applied to the input ports of flower-like structure. All drop ports of flower-like structure are combined to make TDM output signal. The beam combiner gets four drop port signals of flower-like MRRs to achieve reconfigurable logic gates \cite{bloembergen1996nonlinear}, \cite{shen1984principles}. The \textit{OPP A} and \textit{OPP B} are selection legs by which optical signal of an input port is chosen to transmit on the TDM output port. 
+A flower-like based 4:1 TDM is depicted in Fig.\ref{fig2_combiner}. Here, four different input signals have been applied to the input ports of flower-like structure. All drop ports of flower-like structure are combined to make TDM output signal. The beam combiner gets four drop port signals of flower-like MRRs to achieve reconfigurable logic gates \cite{bloembergen1996nonlinear}, \cite{shen1984principles}. The \textit{OPP A} and \textit{OPP B} are selection legs by which optical signal of an input port is chosen to transmit on the TDM output port. 
 \begin{figure}
 \centering
-	\includegraphics[width=3.5 in]{combiner.pdf}
+	\includegraphics[width=3.5 in]{fig2_combiner.pdf}
 	\caption{A 4:1 TDM based on flower-like structure}
-	\label{fig2}
+	\label{fig2_combiner}
 \end{figure}
 Table \ref{tab2} shows input/drop port signals of flower-like structure when selection legs \textit{OPP A}=0 and \textit{OPP B}=0.
 
@@ -208,12 +208,12 @@ where, \textit {P$^1_{min}$}, \textit {P$^0_{max}$}, $P^1_{mean}$, $P^0_{mean}$,
 \label{}
 
 To simulate flower-like structure all parameters such as effective waveguide cross section, MRR’s radii, resonance wavelength of MRRs, internal and external coupling coefficients, and gap between all elements in structure (waveguide and MRRs)  are same as what have been defined in \cite{lalehsimulation}. Also, OPPs are green lasers of wavelength 532 nm with average power of 2.29 mW and optical pulse bit rate is 10 Gbit/s. Here, Simulation is done based on the string of bits for \textit{OPP A} and \textit{OPP B} as 00001111 and 00110011. All results have been achieved using Gaussian shape input pulses with peak power of 0.2 mw and pulse width of 2 ps. These values have been chosen to overcome undesired pumping procedure during injection optical signals through input ports \cite{lalehsimulation}. Additionally, programming environment of MATLAB software is used to calculate all transfer functions.
-First of all, we simulate a TDM, being shown in Fig.\ref{fig2}. There are four different optical signals at input ports of flower-like structure. The 1$^{st}$ input is binary string 11000000, the 2$^{nd}$ input is 00100000, the 3$^{rd}$ and the 4$^{th}$ inputs are 00001100 and 00000001. Simulation results are presented in Fig.\ref{fig3}. It can be seen that output of TDM is the string consists all input signals. Important parameters of TDM have been represented in Table \ref{tab3}.
+First of all, we simulate a TDM, being shown in Fig.\ref{fig2_combiner}. There are four different optical signals at input ports of flower-like structure. The 1$^{st}$ input is binary string 11000000, the 2$^{nd}$ input is 00100000, the 3$^{rd}$ and the 4$^{th}$ inputs are 00001100 and 00000001. Simulation results are presented in Fig.\ref{fig3_muxfi}. It can be seen that output of TDM is the string consists all input signals. Important parameters of TDM have been represented in Table \ref{tab3}.
 \begin{figure}[tb]
 \centering
-\includegraphics[width=5 in]{muxfi.pdf}
+\includegraphics[width=5 in]{fig3_muxfi.pdf}
 	\caption{Simulation result of optical comparator.}
-	\label{fig3}
+	\label{fig3_muxfi}
 \end{figure}
 
 \begin{table}[H]
@@ -247,12 +247,12 @@ First of all, we simulate a TDM, being shown in Fig.\ref{fig2}. There are four d
 \label{tab3} % is used to refer this table in the text
 \end{table}
 
-Comparison between two binary data is required to control or drive the physical variable on the basis of a reference value. The flower-like structure can compare two binary bites and generates one of the outputs \textit {A} =\textit {B}, \textit {A}$>$\textit {B} and \textit {A}$<$\textit {B}. To obtain a comparator circuit, the \textit{XNOR} and \textit{AND} gates would be used. The \textit{XNOR} gate is used in the cases in which the binary digits are equal and the \textit{AND} gate is used through the cases that a binary digitis is greater than or less than the other one. Just based on Tab. \ref{tab4}, the binary combinator can be achieved. The simulation results have been illustrated in Fig.\ref{fig13}.\\
+Comparison between two binary data is required to control or drive the physical variable on the basis of a reference value. The flower-like structure can compare two binary bites and generates one of the outputs \textit {A} =\textit {B}, \textit {A}$>$\textit {B} and \textit {A}$<$\textit {B}. To obtain a comparator circuit, the \textit{XNOR} and \textit{AND} gates would be used. The \textit{XNOR} gate is used in the cases in which the binary digits are equal and the \textit{AND} gate is used through the cases that a binary digitis is greater than or less than the other one. Just based on Tab. \ref{tab4}, the binary combinator can be achieved. The simulation results have been illustrated in Fig.\ref{fig4_comparator}.\\
 \begin{figure}[tb]
 \centering
-\includegraphics[width=5 in]{fig13.pdf}
+\includegraphics[width=5 in]{fig4_comparator.pdf}
 	\caption{Simulation result of optical comparator.}
-	\label{fig13}
+	\label{fig4_comparator}
 \end{figure}
  
 \begin{table}[H]
@@ -307,20 +307,20 @@ The flower-like structure can be also used to design optical half adder and half
 \label{tab5} % is used to refer this table in the text
 \end{table}
 
-Fig.\ref{fig14} presents the half adder simulation results. In this case, Sum=$A'B+AB'$($A\oplus B$) and Carry=\textit {A}.\textit {B}.
+Fig.\ref{fig5_adder} presents the half adder simulation results. In this case, Sum=$A'B+AB'$($A\oplus B$) and Carry=\textit {A}.\textit {B}.
    \begin{figure}[tb]
 \centering
-\includegraphics[width=5 in]{fig14.pdf}
+\includegraphics[width=5 in]{fig5_adder.pdf}
 	\caption{Simulation result of optical half adder.}
-	\label{fig14}
+	\label{fig5_adder}
 \end{figure}
 
-The half subtractor has two outputs which can be achieved as follow. Difference=$A'$.\textit {B}+\textit {A}.$B'$ (\textit {A}$\oplus$\textit {B}) and Borrow=\textit {A}.$B'$. So, the \textit{XOR} output simultaneously gives the result of sum and difference. Simulation results of half subtractor have been shown in Fig. \ref{fig15}. Also important output parameters are reported at Tab. \ref{tab6}.
+The half subtractor has two outputs which can be achieved as follow. Difference=$A'$.\textit {B}+\textit {A}.$B'$ (\textit {A}$\oplus$\textit {B}) and Borrow=\textit {A}.$B'$. So, the \textit{XOR} output simultaneously gives the result of sum and difference. Simulation results of half subtractor have been shown in Fig. \ref{fig6_subtractor}. Also important output parameters are reported at Tab. \ref{tab6}.
    \begin{figure}[tb]
 \centering
-\includegraphics[width=5 in]{fig15.pdf}
+\includegraphics[width=5 in]{fig6_subtractor.pdf}
 	\caption{Simulation result of optical half subtractor.}
-	\label{fig15}
+	\label{fig6_subtractor}
 \end{figure}
 
 \begin{table}[H]
@@ -355,12 +355,12 @@ The authors declare no conflicts of interest.
 \appendix
 \section*{Appendix A}
 \label{Appendix A}
-The flower-like structure and its parameters are presented in Fig.\ref{figa1}.
+The flower-like structure and its parameters are presented in Fig.\ref{fig1a_structure}.
    \begin{figure}[tb]
 \centering
-\includegraphics[width=4 in]{figa1.pdf}
+\includegraphics[width=4 in]{fig1a_structure.pdf}
 	\caption{Flower-like structure}
-	\label{figa1}
+	\label{fig1a_structure}
 \end{figure}
 All parameters of the flower-like structure are defined as below\\
  \begin{equation}
@@ -572,12 +572,12 @@ G_1G_2G_4G_{3,5}+G_1G_2G_4G_5+G_1G_2G_5G_{3,4}
 \end{equation}
 The 1$^{st}$ input to the 1$^{st}$ drop port transfer function, $H_{1-1}$.\\
 
-There is only one path from the 1$^{st}$ input to the 1$^{st}$ drop port. This is shown in Fig. \ref{figa2}.\\
+There is only one path from the 1$^{st}$ input to the 1$^{st}$ drop port. This is shown in Fig. \ref{fig2a_ID11}.\\
   \begin{figure}[tb]
 \centering
-\includegraphics[width=3 in]{figa2.pdf}
+\includegraphics[width=3 in]{fig2a_ID11.pdf}
 	\caption{The only forward path from the 1$^{st}$ input port to the 1$^{st}$ drop port}
-	\label{figa2}
+	\label{fig2a_ID11}
 \end{figure} 
 The forward path gain \textit {T} and $\Delta$ cofactor for this route is calculated as\\
 \begin{equation}
@@ -608,23 +608,23 @@ Drop_{1-1}=H_{1-1}.E_{i1}
 \end{equation}
 
 The 1$^{st}$ input to 4$^{th}$ drop port transfer function, $H_{1-4}$: 
-There two paths from the 1$^{st}$ input to the 4$^{th}$ drop port. These paths are represented in Fig.\ref{figa3}.
+There two paths from the 1$^{st}$ input to the 4$^{th}$ drop port. These paths are represented in Fig.\ref{fig3a}.
 
 \begin{figure}[h!]
   \centering
     \begin{subfigure}[b]{0.4\linewidth}
-    \includegraphics[width=\linewidth]{f41.pdf}
+    \includegraphics[width=\linewidth]{fig3a_141.pdf}
     \caption{}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\linewidth}
-    \includegraphics[width=\linewidth]{f42.pdf}
+    \includegraphics[width=\linewidth]{fig3a_142.pdf}
     \caption{}
   \end{subfigure}
   \caption{two forward paths from the 1$^{st}$ input port to the 4$^{th}$ drop port}
-  \label{figa3}
+  \label{fig3a}
 \end{figure}
 
-The forward path gain \textit {T} and $\Delta$ cofactor for the first route that has been depicted in Fig.\ref{figa3}(a) can be calculated as\\
+The forward path gain \textit {T} and $\Delta$ cofactor for the first route that has been depicted in Fig.\ref{figa3a}(a) can be calculated as\\
 
 \begin{equation}
 \begin{split}
@@ -639,7 +639,7 @@ T^{1^{st}}_{1-4}=-C_3S_1S_2{S^2_{4}}S_7S_8\sqrt{x_1}\sqrt{x_2}\sqrt{x_3}\sqrt{x_
  \label{eqa52}
 \end{split}
 \end{equation}
-The forward path gain \textit {T} and $\Delta$ cofactor for the second route, being presented in Fig.\ref{figa3}(b) are calculated as
+The forward path gain \textit {T} and $\Delta$ cofactor for the second route, being presented in Fig.\ref{fig3a}(b) are calculated as
 
 \begin{equation}
 \begin{split}
@@ -669,29 +669,29 @@ Drop_{1-4}=H_{1-4}.E_{i1}
 
 The 1$^{st}$ input to 3$^{rd}$ drop port transfer function, $H_{1-3}$\\
 
-There are four forward paths from the 1$^{st}$ input to the 3$^{rd}$ drop port.  These four routes are illustrated in Fig.\ref{figa4}.
+There are four forward paths from the 1$^{st}$ input to the 3$^{rd}$ drop port.  These four routes are illustrated in Fig.\ref{fig4a}.
 \begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{0.4\linewidth}
-    \includegraphics[width=\linewidth]{f310.jpg}
+    \includegraphics[width=\linewidth]{fig4a_ID131.jpg}
     \caption{}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\linewidth}
-    \includegraphics[width=\linewidth]{f32.pdf}
+    \includegraphics[width=\linewidth]{fig4a_ID132.pdf}
     \caption{}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\linewidth}
-    \includegraphics[width=\linewidth]{f33.jpg}
+    \includegraphics[width=\linewidth]{fig4a_ID133.jpg}
     \caption{}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\linewidth}
-    \includegraphics[width=\linewidth]{f34.pdf}
+    \includegraphics[width=\linewidth]{fig4a_ID134.pdf}
     \caption{}
   \end{subfigure}
   \caption{all four forward paths from the 1$^{st}$ input port to the 3$^{rd}$ drop port}
-  \label{figa4}
+  \label{fig4a}
 \end{figure}
-The forward path gain \textit {T} and $\Delta$ cofactor for the first route can be calculated as below. This forward path is presented in Fig.\ref{figa4}(a).
+The forward path gain \textit {T} and $\Delta$ cofactor for the first route can be calculated as below. This forward path is presented in Fig.\ref{fig4a}(a).
 
 \begin{equation}
 \begin{split}
@@ -705,7 +705,7 @@ T^{1^{st}}_{1-3}=C_3C_8S_1S_2(S^2_4)S_5S_6(S^2_7)\sqrt{x_1}.x_{2}{x^{\frac{3}{4}
 \end{split}
 \end{equation}
 
-The second forward path from the 1$^{st}$ input port to the 3$^{rd}$ drop port is represented in Fig.\ref{figa4}(b).The forward path gain \textit {T} and $\Delta$ cofactor for this route are introduced as below
+The second forward path from the 1$^{st}$ input port to the 3$^{rd}$ drop port is represented in Fig.\ref{fig4a}(b).The forward path gain \textit {T} and $\Delta$ cofactor for this route are introduced as below
 
 \begin{equation}
 \begin{split}
@@ -718,7 +718,7 @@ T^{2^{nd}}_{1-3}=-C_3C_7S_1S_2(S^2_4)S_5S_6\sqrt{x_1}.x_{2}.{x^{\frac{3}{4}}_3}\
 \Delta^{2^{nd}}_{1-3}=1-C_7C_8.Z^{-Q}
 \end{split}
 \end{equation}
-The forward path gain \textit {T} and $\Delta$ cofactor for the third route that has been depicted in Fig.\ref{figa4}(c) are defined as
+The forward path gain \textit {T} and $\Delta$ cofactor for the third route that has been depicted in Fig.\ref{fig4a}(c) are defined as
 
 \begin{equation}
 \begin{split}
@@ -732,7 +732,7 @@ T^{3^{rd}}_{1-3}=C_4C_7S_1S_2S_5S_6\sqrt{x_1}.{x^{\frac{3}{4}}_3}\sqrt{x_4}.\sqr
 \end{split}
 \end{equation}
 
-Finally, the forth forward path from the 1$^{st}$ input port to the 3$^{rd}$ drop port is shown in Fig.\ref{figa4}(d). The forward path gain \textit {T} and $\Delta$ cofactor are calculated as below
+Finally, the forth forward path from the 1$^{st}$ input port to the 3$^{rd}$ drop port is shown in Fig.\ref{fig4a}(d). The forward path gain \textit {T} and $\Delta$ cofactor are calculated as below
 \begin{equation}
 \begin{split}
 T^{4^{th}}_{1-3}=-C_4C_8S_1S_2S_5S_6.S^2_7\sqrt{x_1}.{x^{\frac{3}{4}}_3}.\sqrt{x_4}.x_5.Z^{-Q}.\sqrt{Z^{-(M+P)}}.Z^{\frac{-3O}{4}}
